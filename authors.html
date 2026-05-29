@@ -10,65 +10,12 @@
             margin: 0; padding: 0; min-height: 100vh;
             font-family: 'Segoe UI', Roboto, sans-serif;
             background-color: #222;
-            background-image: 
-                linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.9)),
-                url('https://images.unsplash.com/photo-1550684376-efcbd6e3f031?q=80&w=2000&auto=format&fit=crop'); 
-            background-size: cover;
-            background-attachment: fixed;
             color: #e0e0e0;
+            display: flex;
+            flex-direction: column; /* Transforma o corpo em uma coluna flexível */
         }
+        
         a { color: #f1c40f; text-decoration: none; transition: 0.2s; }
         a:hover { color: #e74c3c; }
 
-        .alerta-topo {
-            background: #0a0a0a; color: #f1c40f; text-align: center; font-weight: 900;
-            padding: 14px 10px; font-family: 'Impact', sans-serif; font-size: 1.4rem;
-            text-transform: uppercase; border-bottom: 4px solid #f1c40f; border-top: 2px solid #e74c3c;
-        }
-        .main-nav { background: #111; border-bottom: 3px solid #f39c12; text-align: center; padding: 5px 0; position: sticky; top: 0; z-index: 100;}
-        .main-nav a { color: #ecf0f1; font-family: 'Impact', sans-serif; font-size: 1.2rem; text-transform: uppercase; padding: 8px 16px; margin: 2px; border: 2px solid #333; display: inline-block; }
-        .main-nav a:hover { background: #f1c40f; color: #000; transform: skewX(-5deg); }
-
-        .container { max-width: 800px; margin: 40px auto; padding: 0 15px; }
-        .caixa-post { background: rgba(15, 15, 15, 0.95); border: 2px solid #2c3e50; box-shadow: 8px 8px 0 rgba(0,0,0,0.6); padding: 30px; margin-bottom: 40px; position: relative; }
-        .caixa-post::before { content: "!"; position: absolute; top: -15px; left: -15px; background: #f1c40f; color: #000; width: 35px; height: 35px; font-weight: bold; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; border: 2px solid #000; }
-        
-        h1.post-title { font-family: 'Arial Black', sans-serif; text-transform: uppercase; border-left: 6px solid #e74c3c; padding-left: 15px; margin-top: 0; }
-        
-        .site-footer { background: #0d0d0d; color: #bdc3c7; text-align: center; padding: 30px 15px; border-top: 5px solid #f39c12; margin-top: 40px; }
-        
-        /* Botão Acessibilidade */
-        .btn-acessibilidade { background: #f1c40f; color: #000; border: 2px solid #000; padding: 10px 15px; font-weight: bold; cursor: pointer; position: fixed; bottom: 20px; right: 20px; z-index: 9999; box-shadow: 4px 4px 0 #000; }
-        body.alto-contraste { background: #000 !important; background-image: none !important; }
-        body.alto-contraste .caixa-post, body.alto-contraste .main-nav { background: #111 !important; color: #fff !important; border-color: #fff !important; box-shadow: none !important; }
-    </style>
-</head>
-<body>
-    <button id="btn-contraste" class="btn-acessibilidade">◐ Alto Contraste</button>
-    <div class="alerta-topo">⚠ ALERTA DE TEMPORAL SOCIAL — SAÚDE NÃO É MERCADORIA ⚠</div>
-    
-    <nav class="main-nav">
-        <a href="/">🏠 Início</a>
-        <a href="/category/determinantes.html">📊 Determinantes</a>
-        <a href="/category/doencas.html">🦠 Doenças</a>
-        <a href="/category/capitalismo.html">💰 Capitalismo</a>
-    </nav>
-
-    <div class="container">
-    <h2>Authors on Será que chove?</h2>
-    <ul>
-            <li><a href="/author/matheus.html">Matheus</a> (1)</li>
-    </ul>
-    </div>
-
-    <footer class="site-footer">
-        <p>&#169; Será que chove? &#8212; Saúde é direito, não privilégio. | Feito na raça, na quebrada e em Python.</p>
-    </footer>
-
-    <script>
-        document.getElementById('btn-contraste').addEventListener('click', function() {
-            document.body.classList.toggle('alto-contraste');
-        });
-    </script>
-</body>
-</html>
+        .
